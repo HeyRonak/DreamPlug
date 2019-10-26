@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/img"
+        android:src="@drawable/logo"
+        android:scaleType="center"
+        android:layout_width="250dp"
+        android:layout_gravity="center"
+        android:layout_height="250dp" />
+
+    <TextView
+        android:text="Login Page"
+        android:textColor="#000"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:typeface="monospace"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/email"
+        android:inputType="textEmailAddress"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="Enter email address"
+        android:background="@drawable/edittext"
+        android:padding="10sp"
+        android:typeface="monospace"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="Enter password"
+        android:inputType="textPassword"
+        android:typeface="monospace"
+        android:background="@drawable/edittext"
+        android:padding="10sp"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:id="@+id/login"
+        android:text="Log in"
+        android:textAllCaps="false"
+        android:layout_margin="15dp"
+        android:padding="10dp"
+        android:typeface="monospace"
+        android:textColor="#fff"
+        android:background="@drawable/button"
+        android:onClick="send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
